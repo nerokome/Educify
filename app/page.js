@@ -35,7 +35,7 @@ export default function RecommendationsPage() {
               your colleagues, friends and family.
             </p>
 
-            {/* Bordered Box */}
+          
             <div className="mt-8 flex flex-col items-center border-2 border-dashed border-gray-200 rounded-xl p-6">
               <p className="mb-4 font-medium text-gray-700">
                 Ask for recommendations via:
