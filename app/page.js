@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
-import { FaFacebook, FaWhatsapp, FaTwitter } from "react-icons/fa";
+import { FaFacebook, FaWhatsapp, } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import Sidebar from "./components/Sidebar";
 import Navbar from "./components/Navbar";
@@ -80,7 +81,7 @@ export default function RecommendationsPage() {
                   onClick={() => handleOpenModal("twitter")}
                   className="flex items-center gap-2 rounded-2xl bg-black px-4 py-2 font-medium text-white hover:bg-gray-800"
                 >
-                  <FaTwitter /> X (Twitter)
+                  <FaXTwitter /> X (Twitter)
                 </button>
               </div>
             </div>
