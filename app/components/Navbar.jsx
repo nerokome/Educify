@@ -1,6 +1,9 @@
 'use client'
 import React from 'react'
 import Image from 'next/image'
+import { IoMdNotificationsOutline } from "react-icons/io";
+import { GoQuestion } from "react-icons/go";
+import { CiSearch } from "react-icons/ci";
 
 const Navbar = () => {
   return (
@@ -9,18 +12,27 @@ const Navbar = () => {
             <p>
                 educify
             </p>
-            <input
-        type="text"
-        placeholder="Search for anything"
-        className="w-[300px] rounded-2xl border px-3 py-2 text-sm outline-none"
-      />
+           <div className="flex items-center border rounded-3xl w-[250px] px-2">
+  <CiSearch size={25} className="text-gray-700 mr-2" />
+  <input
+    type="text"
+    placeholder="Search for anything"
+    className="flex-1 py-2 text-sm outline-none"
+  />
+</div>
         </div>
       
       <div className="flex items-center gap-4">
+         <div className='bg-gray-200 p-2 rounded-full'>
+            <GoQuestion  size={24} />
+          </div>
         <button className="relative">
-          <span className="absolute right-0 top-0 h-2 w-2 rounded-full bg-red-500"></span>
-          🔔
+          <div className='bg-gray-200 p-2 rounded-full'>
+            <IoMdNotificationsOutline size={24} />
+          </div>    
+          <span className="absolute -top-1 -right-1 inline-flex h-3 w-3 animate-pulse rounded-full bg-red-500"></span>
         </button>
+        
         <div className="flex items-center gap-2 bg-gray-200 py-2 px-5 rounded-4xl">
           <div className='flex flex-col '>
            <span className="font-medium">Bekwa Undia</span>
