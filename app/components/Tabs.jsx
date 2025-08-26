@@ -6,12 +6,12 @@ const Tabs = () => {
   return (
     <div>
         <div className=" bg-white px-6">
-      <nav className="flex space-x-8">
+      <nav className="flex space-x-16">
         {tabs.map((tab) => (
           <a
             key={tab}
             href="#"
-            className={`py-4 text-sm font-medium ${
+            className={`py-4 text-md font-medium ${
               tab === "Recommendations"
                 ? "border-b-2 border-black text-black-"
                 : "text-gray-500 hover:text-gray-700"
